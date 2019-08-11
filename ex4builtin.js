@@ -8,7 +8,7 @@ function dataHandling2(input){
   // OUTPUT 2
 
   var tanggal = input[3];
-  splitTanggal = tanggal.split('/');
+  var splitTanggal = tanggal.split('/');
 
   switch(splitTanggal[1]) {
     case '01':   { console.log(' Januari '); break; }
@@ -26,11 +26,11 @@ function dataHandling2(input){
   }
 
   // OUTPUT 3
-  sortTanggal = splitTanggal.sort(function(a, b) { 
+  var sortTanggal = splitTanggal.sort(function(a, b) { 
     return b - a; });
   console.log(sortTanggal);
 
-  joinTanggal = tanggal.split('/').join('-');
+  var joinTanggal = tanggal.split('/').join('-');
   console.log(joinTanggal); 
   
   var nama = input.splice(1,1);
