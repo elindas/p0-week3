@@ -5,7 +5,7 @@ function cariMean(arr) {
   for(var i = 0; i < arr.length; i ++) {
     sum += arr[i];
   }
-  return Math.round(sum/arr.length);
+  return Math.ceil(sum/arr.length);
 }
 
 // TEST CASES

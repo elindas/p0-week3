@@ -1,16 +1,16 @@
 
 function tentukanDeretGeometri(arr) {
     var hasilBagi = arr[1]/arr[0]; 
+    var result= true
+
     for (i=2; i< arr.length; i++) {
         if ((arr[i]/arr[i-1]) !== hasilBagi) {
-            var nilaiDeret = false;
-        } else {
-            var nilaiDeret = true;
-        }
+          result = false
+        } 
     }
 
-    return nilaiDeret;    
-  }
+    return result;    
+}
   
   // TEST CASES
   console.log(tentukanDeretGeometri([1, 3, 9, 27, 81])); // true
