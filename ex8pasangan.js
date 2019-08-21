@@ -1,17 +1,17 @@
 function pasanganTerbesar(num) {
   var numberString = num.toString();
-  var newArray = [];
+  var newNumber = [];
 
   for (var i = 0; i < numberString.length - 1; i++) {
     var checkNumber = numberString[i] + numberString[i + 1];
-    newArray.push(checkNumber);
+    newNumber.push(Number(checkNumber));
   }
 
-  newArray.sort(function(a, b) {
+  newNumber.sort(function(a, b) {
     return b - a;
   });
   
-  var terbesar = Number(newArray[0]);
+  var terbesar = newNumber[0];
   return terbesar;
 }
 
