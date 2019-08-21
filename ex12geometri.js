@@ -1,14 +1,10 @@
 function tentukanDeretGeometri(arr) {
   var hasilBagi = arr[1] / arr[0];
-  var result;
+  var result = false
 
   for (i = 2; i < arr.length; i++) {
-    if (arr[2] === undefined) {
-      result = undefined;
-    } else if (arr[i] / arr[i - 1] !== hasilBagi) {
-      result = false;
-    } else {
-      result = true
+    if (arr[i] / arr[i - 1] === hasilBagi) {
+        resul= true
     }
   }
   return result;
